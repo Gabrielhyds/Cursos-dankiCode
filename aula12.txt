@@ -1,0 +1,7 @@
+# Comando extra LIMIT
+
+    #selecionando tudo porem com limite de 10 
+    - select * from post LIMIT 10;
+
+    #selecionando tudo com o limite de 10 e ordenando pelo id decrescente
+    - select * from post LIMIT 10 ORDER BY id desc;

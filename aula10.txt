@@ -1,0 +1,13 @@
+- Comando para ordenar "order"
+
+    # inserindo os dados na table
+    - insert into `posts´ values(null,"segundo post","conteudo do segundo post",0);
+
+    #selecionando tudo
+    - select * from post;
+    
+    #selecionando tudo com o order by em ordem decrescente
+    - select * from post order by id desc;
+    
+    #outro exemplo aleatorio onde temos uma table aluno e queremos ordenar pelo nome
+    - SELECT * FROM aluno ORDER BY nome;

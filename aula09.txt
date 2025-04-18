@@ -1,0 +1,4 @@
+- Deletar dados do banco 
+
+    # comando para deletar dados
+    - delete from autores where id = 1 and nome = "jose";

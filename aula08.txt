@@ -1,0 +1,27 @@
+- Operação para atualizar dados na table 
+
+    #ver todos os banco de dados
+    - show databases;
+
+    #selecionar o banco de dados especifico
+    - use <nomeBANCODEDADOS>;
+
+    #ver as tables que tem nessa database
+    - show tables;
+
+    #ver tudo que tem dentro da table autores
+    - select * from autores;
+
+    # inserindo os dados na table
+    - insert into `autores´ values(null,"João");
+
+    # adicionamos mais um autor vamos selecionar tudo 
+    - select * from autores;
+
+    #ATUALIZAR UM DADO EXISTENTE = {forma erradissima pois está sem o WHERE}
+    - update autores set nome = "felipe";
+
+    #ATUALIZAR UM DADO EXISTENTE 
+    - update autores set nome = "felipe" where id = 1;
+
+

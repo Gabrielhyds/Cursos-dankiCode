@@ -1,0 +1,21 @@
+Banco de dados:
+
+o que são banco de dados:
+
+- são conjuntos de informações para sentido a 'alguma coisa'
+
+
+
+- De forma organizada e tratada, traz aos sistemas informações
+
+sobre algo de forma legível ao usuário final.
+
+Modelagem de dados:
+
+- Técnica utilizada para especificação da estrutura de dados do banco
+
+
+
+- Existem diversas aplicações teóricas e práticas: Modelo conceitual
+
+modelo Logico, Modelo Fisico

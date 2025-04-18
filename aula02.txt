@@ -1,0 +1,47 @@
+banco de dados:
+
+ - utilizado para construção de sistemas
+ 	- Integração com back-end
+		- php, nodeJs, Python, etc..
+	- Resolver problemas que não são possiveis com dados estáticos
+		- exemplo: quantos usuários existem? quais dados destes 
+			   usuários?
+
+ - Querys e sua importância
+	- as querys são comandos que enviamso para o banco de dados
+	- o que queremos filtrar? o que queremos deletar? o que queremos atualizar?
+
+
+ - O que podemos fazer com as QUERYS?
+	- SELECT 
+		- O que? Onde?
+	- DELETE
+		- o que? Onde?
+	- UPDATE
+		- o que? Onde?
+	- INSERT
+		- o que? Onde?
+
+ - BACKEND: 
+    Browser 
+    |
+    webserver
+    |
+    Databases
+
+ - A linguagem de programação importa?
+
+	- as querys sempre são as mesmas independente da linguagem
+	- Existe apenas uma logica para banco de dados relacional,  
+      como para o não relacional 
+	- A linguagem de programação possui uma 'Extensão' que se 
+	  comunica com banco de dados (independente do banco, bem
+	  como a linguagem).
+
+ - SQL VS MQL
+	- Para banco de dados relacional: SQL (Server Query Language)
+	- Para banco de dados não relacional: MQL (Mongo query Language)
+
+
+
+

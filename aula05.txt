@@ -1,0 +1,4 @@
+- criar o database
+    - create database <NOME DO BANCO DE DADOS>; //criando o banco
+    - show databases;  //listando todos os bancos 
+    - use <NOME DO BANCO DE DADOS>; // selecionando o banco de dados

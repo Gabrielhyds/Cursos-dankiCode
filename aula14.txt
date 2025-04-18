@@ -1,0 +1,49 @@
+# -- Cria o banco de dados
+# CREATE DATABASE IF NOT EXISTS cadastro_simples;
+# USE cadastro_simples;
+
+# -- Cria a tabela de clientes
+# CREATE TABLE clientes (
+#     id INT AUTO_INCREMENT PRIMARY KEY,
+#     nome VARCHAR(100) NOT NULL,
+#     email VARCHAR(100),
+#     telefone VARCHAR(20),
+#     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+# );
+
+# -- Insere alguns exemplos de clientes
+# INSERT INTO clientes (nome, email, telefone) VALUES
+# ('Ana Souza', 'ana@gmail.com', '(11) 99999-1111'),
+# ('Bruno Lima', 'bruno@hotmail.com', '(21) 98888-2222'),
+# ('Carlos Mendes', 'carlos@empresa.com.br', '(31) 97777-3333');
+
+# -- Cria a tabela de pedidos
+# CREATE TABLE pedidos (
+#     id INT AUTO_INCREMENT PRIMARY KEY,
+#     cliente_id INT NOT NULL,
+#     descricao VARCHAR(255) NOT NULL,
+#     valor DECIMAL(10,2) NOT NULL,
+#     data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+#     FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+# );
+
+# -- Insere alguns pedidos
+# INSERT INTO pedidos (cliente_id, descricao, valor) VALUES
+# (1, 'Compra de notebook', 3500.00),
+# (1, 'Compra de mouse', 120.00),
+# (2, 'Compra de celular', 2500.00),
+# (3, 'Compra de cadeira gamer', 850.00),
+# (3, 'Compra de monitor', 900.00);
+
+
+########## inner join ################
+
+# select clientes.id, clientes.nome, pedidos.valor, pedidos.descricao from clientes inner join pedidos on clientes.id = pedidos.cliente_id;
+
+######## left join #################
+
+# SELECT  clientes.nome, pedidos.descricao, pedidos.valor FROM clientes LEFT JOIN pedidos oN clientes.id = pedidos.cliente_id;
+
+########## rigth join ##############
+
+# SELECT clientes.nome,pedidos.descricao,pedidos.valor FROM clientes RIGHT JOIN pedidosON clientes.id = pedidos.cliente_id;

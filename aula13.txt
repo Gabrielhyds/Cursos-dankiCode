@@ -1,0 +1,4 @@
+- [EXTRA] Aprofundamento nas condições SQL
+
+# like 
+- select * from post where conteudo like %teste%;

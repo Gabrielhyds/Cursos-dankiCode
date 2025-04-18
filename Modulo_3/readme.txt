@@ -1,3 +1,0 @@
-Esse modulo veremos poo que é a programação orientada a objetos
-em JavaScript. 
-Desde como instânciar um objeto, classes, etc...

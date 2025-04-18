@@ -1,0 +1,11 @@
+# Comando group by
+    # agrupar conjuntos de informações que queremos puxar os dados
+
+    #selecionando tudo
+    - select * from post;
+
+    #usando o group by
+    - SELECT * FROM posts GROUP BY autor_id;
+
+    #usando o order by e group by na mesma query
+    - SELECT * FROM posts GROUP BY autor_id ORDER BY id desc;

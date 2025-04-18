@@ -1,0 +1,24 @@
+- Selecionando database e criando tabelas relacionais
+
+ - comandos utilizandos em aula
+    
+    # ver todos os databases
+    - show databases; 
+
+    # selecionar o database em especifico 
+    - use <nome do banco de dados>
+    
+    # criamos uma uma tabela posts
+    - create table posts (id INT NOT NULL AUTO_INCREMENT, titulo VARCHAR(255) NOT NULL, conteudo TEXT NOT NULL, autor_id INT NOT NULL, PRIMARY KEY(id)) ENGINE=InnoDB; 
+    
+    # comando para listar as tabelas do banco de dados
+    - show tables;
+    
+    # criamos outra tabela chamada autores
+    - create table autores (id INT NOT NULL AUTO_INCREMENT, nome VARCHAR(255) NOT NULL, PRIMARY KEY(id)) ENGINE=InnoDB;  
+    
+    # comando para selecionar tudo da tabela autores
+    - select * from autores;
+    
+    # comando para listar todas as colunas que criamos na tabela posts
+    - show columns from posts

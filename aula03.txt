@@ -1,0 +1,14 @@
+ - MYSQL
+	- Banco de dados relacional
+	- Escalável
+	- Rápido
+	- Fácil integração com qualquer tecnologia back-end
+	- Grátis
+	- Comunidade Enorme!
+
+ - MONGO DB
+	- Banco de dados não relacional 
+	- Extremamente rápido
+	- Perfeito da aplicação grandes
+		- mongoDB atlas
+	- Normalmente utilizado como NODEJS

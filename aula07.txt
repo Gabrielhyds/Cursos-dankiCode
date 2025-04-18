@@ -1,0 +1,19 @@
+- Operação para adicionar informações no banco de dados
+
+    # exibindo as colunas da tabela posts 
+    - show columns from posts. 
+
+    # inserindo os dados na table
+    - insert into `posts´ values(null,"meu primeiro post","conteudo do primeiro post",0);
+
+    # ver tudo que está inserido na table
+    - select * from posts;
+
+   # exibindo as colunas da tabela autores 
+   - show columns from autores. 
+
+   # inserindo os dados na table
+   - insert into `autores´ values(null,"Gabriel");
+
+   # ver tudo que está inserido na table
+   - select * from autores;
