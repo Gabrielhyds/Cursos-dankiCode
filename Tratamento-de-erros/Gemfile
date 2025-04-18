@@ -1,0 +1,8 @@
+# Especifica a versão do Ruby a ser usada
+ruby '2.7.2'
+
+# Fonte padrão para buscar as gems
+source 'https://rubygems.org'
+
+# Especifica a gem e a versão necessária
+gem 'byebug', '6.1.4'

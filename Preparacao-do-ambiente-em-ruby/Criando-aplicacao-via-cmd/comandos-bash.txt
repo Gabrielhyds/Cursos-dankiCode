@@ -1,0 +1,102 @@
+Comandos de Navegação no Sistema de Arquivos
+pwd: Exibe o diretório atual (print working directory).
+
+bash
+pwd
+ls: Lista arquivos e diretórios no diretório atual.
+
+bash
+ls
+ls -l  # Lista detalhada com permissões, proprietário, tamanho, etc.
+ls -a  # Lista todos os arquivos, incluindo os ocultos (começam com .)
+cd: Muda o diretório atual.
+
+bash
+cd /caminho/para/diretorio
+cd ~  # Vai para o diretório home do usuário
+cd ..  # Sobe um nível no diretório
+Comandos de Manipulação de Arquivos e Diretórios
+cp: Copia arquivos ou diretórios.
+
+bash
+cp arquivo_origem arquivo_destino
+cp -r diretorio_origem diretorio_destino  # Copia diretórios recursivamente
+mv: Move ou renomeia arquivos ou diretórios.
+
+bash
+mv arquivo_origem arquivo_destino
+mv antigo_nome novo_nome  # Renomeia um arquivo ou diretório
+rm: Remove arquivos ou diretórios.
+
+bash
+rm arquivo
+rm -r diretorio  # Remove diretórios recursivamente
+rm -f arquivo  # Força a remoção sem perguntar
+mkdir: Cria novos diretórios.
+
+bash
+mkdir novo_diretorio
+mkdir -p /caminho/para/novo/diretorio  # Cria diretórios e subdiretórios conforme necessário
+touch: Cria um novo arquivo vazio ou atualiza a data de modificação de um arquivo existente.
+
+bash
+touch novo_arquivo
+Comandos de Exibição e Pesquisa de Conteúdo
+cat: Exibe o conteúdo de um arquivo.
+
+bash
+cat arquivo
+less: Exibe o conteúdo de um arquivo, permitindo navegação (mais prático para arquivos grandes).
+
+bash
+less arquivo
+head: Mostra as primeiras linhas de um arquivo.
+
+bash
+head arquivo
+head -n 10 arquivo  # Mostra as primeiras 10 linhas
+tail: Mostra as últimas linhas de um arquivo.
+
+bash
+tail arquivo
+tail -n 10 arquivo  # Mostra as últimas 10 linhas
+tail -f arquivo  # Segue o crescimento de um arquivo em tempo real (útil para logs)
+grep: Pesquisa por padrões em arquivos.
+
+bash
+grep "termo_de_busca" arquivo
+grep -r "termo_de_busca" diretorio  # Pesquisa recursivamente em um diretório
+Comandos de Controle de Processos
+ps: Lista os processos em execução.
+
+bash
+ps
+ps aux  # Lista detalhada de todos os processos
+top: Exibe os processos em execução em tempo real.
+
+bash
+top
+kill: Envia um sinal para um processo (normalmente usado para terminar um processo).
+
+bash
+kill PID  # Substitua PID pelo ID do processo
+kill -9 PID  # Força a finalização de um processo
+Outros Comandos Úteis
+echo: Imprime uma linha de texto.
+
+bash
+echo "Olá, Mundo!"
+chmod: Modifica as permissões de um arquivo ou diretório.
+
+bash
+chmod 755 arquivo  # Define permissões de leitura, escrita e execução
+chmod +x script.sh  # Adiciona permissão de execução a um script
+chown: Modifica o proprietário de um arquivo ou diretório.
+
+bash
+chown usuario:grupo arquivo
+chown -R usuario:grupo diretorio  # Recursivamente
+man: Exibe o manual de um comando.
+
+bash
+man comando
