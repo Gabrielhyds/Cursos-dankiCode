@@ -1,6 +1,0 @@
-Nesse projeto irei criar a pokedex apenas utilizando
-
-    - HTML5 
-    - CSS3 
-    - JAVASCRIPT - PURO 
-    
