@@ -1,4 +1,4 @@
-public class Caminhao {
+public class Caminhao extends Veiculo {
     public int capacidade() {
         return 0;
     }
