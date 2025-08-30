@@ -1,6 +1,6 @@
-import java.sql.Date;
+import java.util.Date;
 
-public class Veiculo {
+public abstract class Veiculo {
     String nome;
     Date dataProducao;
     double potencia;
@@ -8,4 +8,6 @@ public class Veiculo {
     public int deslocar() {
         return 0;
     }
+
+    public abstract void transporte();
 }

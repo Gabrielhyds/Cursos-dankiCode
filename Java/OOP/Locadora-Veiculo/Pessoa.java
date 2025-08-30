@@ -1,3 +1,3 @@
-public class Pessoa extends Cliente {
+public class Pessoa {
     String nome;
 }

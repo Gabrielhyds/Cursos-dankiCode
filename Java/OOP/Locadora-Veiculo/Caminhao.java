@@ -1,9 +1,12 @@
 public class Caminhao extends Veiculo {
-    public int capacidade() {
-        return 0;
+    int capacidade;
+
+    @Override
+    public void transporte() {
+        System.out.println("Caminhão transportando carga.");
     }
 
-    public int transportar() {
-        return 0;
+    public void transporte(int capacidade) {
+        System.out.println("Caminhão transportando carga de " + capacidade + " kg.");
     }
 }

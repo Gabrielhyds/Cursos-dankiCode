@@ -1,5 +1,9 @@
 public class Carro extends Veiculo {
-    public int numPassageiros() {
-        return 0;
+    int numPassageiro;
+
+    @Override
+    public void transporte() {
+        System.out.println("O Carro está transportando" + numPassageiro + " passageiros.");
     }
+
 }
