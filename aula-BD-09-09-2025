@@ -1,0 +1,132 @@
+-- =========================================
+-- 1. Criar banco de dados
+-- =========================================
+CREATE DATABASE IF NOT EXISTS exemplo_crud;
+USE exemplo_crud;
+
+-- =========================================
+-- 2. Criar tabela
+-- =========================================
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    idade INT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- =========================================
+-- 3. CREATE (Inserir dados)
+-- =========================================
+INSERT INTO usuarios (nome, email, idade) VALUES
+('Leonardo', 'leo@email.com', 30),
+('Maria', 'maria@email.com', 25),
+('João', 'joao@email.com', 28);
+
+-- =========================================
+-- 4. READ (Consultar dados)
+-- =========================================
+-- Selecionar todos os usuários
+SELECT * FROM usuarios;
+
+-- Selecionar usuários com idade maior que 26
+SELECT * FROM usuarios
+WHERE idade > 26;
+
+-- =========================================
+-- 5. UPDATE (Atualizar dados)
+-- =========================================
+-- Atualizar idade do João para 29
+UPDATE usuarios
+SET idade = 29
+WHERE nome = 'João';
+
+-- =========================================
+-- 6. DELETE (Deletar dados)
+-- =========================================
+-- Deletar o usuário Maria
+DELETE FROM usuarios
+WHERE nome = 'Maria';
+
+-- =========================================
+-- 7. Consultar após alterações
+-- =========================================
+SELECT * FROM usuarios;
+
+
+-- =========================================
+-- 8. Criar table produtos
+		id - int 
+		nome - varchar
+		marca - varchar
+		preço - int
+		unidade - varchar
+		data_created datastamp
+-- =========================================
+
+		
+		
+create table produtos(
+	id int auto_increment primary key,
+	nome varchar(100),
+	marca varchar(100),
+	preco int,
+	unidade varchar(100),
+	data_created TIMESTAMP
+);
+
+select * from produtos;
+
+
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Arroz Branco', 'Tio João', 19.90, 'kg', '2025-09-01');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Feijão Carioca', 'Kicaldo', 12.50, 'kg', '2025-09-01');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Macarrão Espaguete', 'Renata', 4.30, 'un', '2025-09-02');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Óleo de Soja', 'Liza', 7.80, 'L', '2025-09-02');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Açúcar Refinado', 'União', 5.60, 'kg', '2025-09-03');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Café Torrado', 'Melitta', 14.90, 'kg', '2025-09-03');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Leite Integral', 'Itambé', 4.90, 'L', '2025-09-04');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Manteiga com Sal', 'Aviação', 9.70, 'un', '2025-09-04');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Farinha de Trigo', 'Dona Benta', 6.40, 'kg', '2025-09-05');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Sal Refinado', 'Cisne', 2.30, 'kg', '2025-09-05');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Achocolatado', 'Nescau', 7.20, 'kg', '2025-09-06');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Refrigerante Cola', 'Coca-Cola', 8.50, 'L', '2025-09-06');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Detergente Líquido', 'Ypê', 2.70, 'un', '2025-09-07');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Sabão em Pó', 'OMO', 18.90, 'kg', '2025-09-07');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Amaciante', 'Comfort', 12.30, 'L', '2025-09-08');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Papel Higiênico', 'Neve', 10.00, 'un', '2025-09-08');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Escova de Dente', 'Colgate', 5.90, 'un', '2025-09-09');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Creme Dental', 'Oral-B', 4.50, 'un', '2025-09-09');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Shampoo', 'Pantene', 15.20, 'un', '2025-09-10');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Condicionador', 'Pantene', 15.20, 'un', '2025-09-10');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Desodorante Aerosol', 'Rexona', 9.90, 'un', '2025-09-11');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Sabonete em Barra', 'Dove', 3.50, 'un', '2025-09-11');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Cerveja Pilsen', 'Skol', 3.20, 'L', '2025-09-12');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Vinho Tinto', 'Miolo', 29.90, 'L', '2025-09-12');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Água Mineral', 'Crystal', 2.00, 'L', '2025-09-13');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Suco de Laranja', 'Del Valle', 6.80, 'L', '2025-09-13');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Iogurte Natural', 'Nestlé', 3.90, 'un', '2025-09-14');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Presunto Fatiado', 'Sadia', 6.40, 'kg', '2025-09-14');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Queijo Mussarela', 'Italac', 29.50, 'kg', '2025-09-15');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Margarina', 'Qualy', 5.20, 'un', '2025-09-15');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Biscoito Recheado', 'Trakinas', 2.90, 'un', '2025-09-16');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Chocolate ao Leite', 'Lacta', 6.50, 'un', '2025-09-16');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Cereal Matinal', 'Nescau', 9.30, 'un', '2025-09-17');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Pizza Congelada', 'Seara', 18.70, 'un', '2025-09-17');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Frango Congelado', 'Perdigão', 13.20, 'kg', '2025-09-18');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Carne Moída', 'Friboi', 28.90, 'kg', '2025-09-18');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Peito de Frango', 'Sadia', 17.60, 'kg', '2025-09-19');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Linguiça Toscana', 'Perdigão', 16.40, 'kg', '2025-09-19');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Batata Congelada', 'McCain', 12.90, 'kg', '2025-09-20');
+INSERT INTO produtos (nome, marca, preco, unidade, data_created) VALUES ('Ervilha em Lata', 'Quero', 3.10, 'un', '2025-09-20');
+
+
+
+
+
+update produtos
+set preco = preco * 1.2
+where nome like "a%";
+
+select * from produtos;
+
+select * from produtos;
